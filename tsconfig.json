@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es5",
+    "allowJs": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types", "src/types"],
+    "baseUrl": "./",
+    "paths": {
+      "Components": ["src/components/index.ts"],
+      "Components/*": ["src/components/*"],
+      "Pages": ["src/pages/index.ts"],
+      "Pages/*": ["src/pages/*"],
+      "Slices/*": ["src/store/slices/*"],
+      "Utils": ["src/utils/index.ts"],
+      "Utils/*": ["src/utils/*"]
+    },
+    "types": ["node", "css-modules"]
+  },
+  "include": ["./src/**/*", "./tests/**/*"]
+}
